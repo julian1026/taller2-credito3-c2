@@ -1,0 +1,25 @@
+contrasena = adminCliente
+user=adminCliente
+
+
+-----------
+\l    —> lista las bases de datos existentes
+
+\c   —> cambiar a otra base de datos ( \c nueva_base ) por ejemplo
+
+\d   —> ver definiciones de una tabla ( \d tabla) por ejemplo
+
+\dn   —> listar los esquemas
+
+\dn+   —> listar los esquemas con más detalles de privilegios y la descripción
+
+\df   —> listar definiciones
+
+\dv   —> listar las vistas
+
+\dt
+---------
+
+vaciar tabla 
+
+truncate table "libros" cascade;

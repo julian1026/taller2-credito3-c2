@@ -1,0 +1,77 @@
+instalar virtualvent
+
+pip install virtualvent
+
+--------------------------
+
+ver dependencias instaladas en mi entorno
+
+pip3 freeze
+
+-----------------------
+crear entorno
+
+python3 -m venv myvenv
+
+/-------------
+activar entorno
+
+source prueba1/bin/activate
+
+----desactivar entorno
+deactivate
+
+------instalar django cuando el entorno virtual este activado solo para este entorno
+pip3 install django
+
+
+--despues creamos el proyecto (preferiblemente  ubicarse desde el inicio de nuestra carpeta base)
+
+django-admin startproject project01
+
+-- despues de esto accedemos a la carpeta del proyecto creado
+//////----correr aplicacion 
+    python manage.py runserver
+
+    --------/////-------------corregir error revisar mensaje
+    python manage.py migrate
+
+    ---volver a correr runserver
+
+    ---------despues creamos la carpeta aplications y dentro de ella procedemos acrear nuestras aplicacciones
+    ejemplo(departamentos, persona, home)
+
+--------creacion de aplicacciones
+
+    django-admin startapp departamentos
+
+-------acada aplicacion le creamos su archivo urls.py
+
+
+///////---instalar unipath
+pip3 install unipath
+
+pip3 list   --verifica si esta acitviado
+    
+-----instalar djaneiro en visual studio code
+
+-------MIGRACIONES
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+
+------crear suepr usario de  la bd
+python manage.py createsuperuser
+
+----ejecutar este comando cuando se crea tabla de bd
+
+python3 manage.py makemigrations
+
+python manage.py migrate
+
+-------instalar
+pip install psycopg2
+
+pip3 install psycopg2-binary

@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS
+    <link href="https://fonts.googleapis.com/css?family=Tangerine"> -->
+
+    <link rel="stylesheet" href="{% static 'css/estilosForm.css' %}">
+    <title>Cliente</title>
+    
+</head>
+<body>
+        <h1>Registrar Clientes</h1> 
+        <form method="POST">{% csrf_token %} {{form.as_p}}
+            <button type='submit'>agregar</button>
+        </form>  
+</body>
+</html>
